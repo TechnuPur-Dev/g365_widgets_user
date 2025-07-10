@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:g365_widgets_user/constants.dart';
 
 class SigninBackground extends StatelessWidget {
   const SigninBackground({super.key});
@@ -18,7 +19,15 @@ class SigninBackground extends StatelessWidget {
           top: 0,
           child: Column(
             children: [
-              Row(children: [SvgPicture.asset("assets/svg/global_light_background.svg", height: 550)]),
+              Row(
+                children: [
+                  SvgPicture.asset(
+                    "assets/svg/global_light_background.svg",
+                    height: 550,
+                    package: AppContants.packageName,
+                  ),
+                ],
+              ),
             ],
           ),
         ),
@@ -32,7 +41,13 @@ class SigninBackground extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.end,
-                children: [SvgPicture.asset("assets/svg/global_light_background_right.svg", height: 550)],
+                children: [
+                  SvgPicture.asset(
+                    "assets/svg/global_light_background_right.svg",
+                    height: 550,
+                    package: AppContants.packageName,
+                  ),
+                ],
               ),
             ],
           ),

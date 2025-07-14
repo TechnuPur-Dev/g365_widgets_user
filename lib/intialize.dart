@@ -5,6 +5,7 @@ class G365User {
 
   static init(G365Application module, String env) {
     AppContants.logoDark = logosPath[env][module]["dark"] ?? 'assets/svg/global365_dark.svg';
+    AppContants.logoLight = logosPath[env][module]["light"] ?? 'assets/svg/global365_light.svg';
   }
 
   static dynamic logosPath = {
